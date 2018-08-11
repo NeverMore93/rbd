@@ -19,7 +19,7 @@ const localeData = getLocaleData(messages, locale);
 
 export default () => (
   <Provider store={store}>
-    <IntlProvider locale={localeData.locale} messages={localeData.messages}>
+    <IntlProvider locale={'zh-CN'} messages={localeData.messages}>
       <Main />
     </IntlProvider>
   </Provider>

@@ -63,7 +63,8 @@
     "sass-loader": "^6.0.3",
     "webpack": "^3.4.1",
     "moment": "2.22.2",
-    "react-digital-clock": "^0.1.2"
+    "react-digital-clock": "^0.1.2",
+    "react-clock": "^2.3.0"
   },
   "jest": {
     "collectCoverage": true,

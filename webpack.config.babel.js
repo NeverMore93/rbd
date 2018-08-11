@@ -85,7 +85,7 @@ export default Object.assign({
     publicPath: '/'
   },
   resolve: {
-    extensions: ['.js', '.scss', '.css', '.json', '.jpg']
+    extensions: ['.js', '.scss', '.css', '.json', '.jpg', '.less']
   },
   plugins,
   node: {
@@ -120,6 +120,22 @@ export default Object.assign({
         options: {
           limit: 8192,
         },
+      },
+      {
+        test: /\.less$/,
+        use: [{
+          loader: 'style-loader' // creates style nodes from JS strings
+        }, {
+          loader: 'css-loader' // translates CSS into CommonJS
+        }, {
+          loader: 'less-loader',
+          options: {
+            name: '[name].less',
+            outputStyle: 'compressed',
+            includePaths: [
+              './node_modules'
+            ] }
+        }]
       }
     ]
   }
