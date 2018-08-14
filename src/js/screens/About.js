@@ -1,10 +1,13 @@
 import React, { Component } from 'react';
 import { Box, Table, TableRow, Image, Heading, Label, Paragraph } from 'grommet';
+import { Map } from 'react-amap';
 
 export default class About extends Component {
   render() {
     return (
       <Box align={'center'} style={{ width: '100%' }}>
+        <br />
+        <br />
         <Box align={'center'} style={{ padding: '10px' }} >
           <span style={{ width: '60%', fontSize: 'x-large' }}>
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;惠州市道路桥梁勘察设计院位于广东省惠州市。惠州地处东江之滨，粤东门户，广东省历史名城，先后荣获“中国最具幸福感城市”、“中国优秀旅游城市”、“全国文明城市”等称号。南临南海大亚湾，与深圳、香港毗邻，开放包容，崇文厚德，华侨众多，为客家侨都。惠州属珠三角经济区，数码和石化是惠州的两大经济支柱，有TCL、德赛、华阳等大型本土国有（控股）企业集团以及侨兴、富绅等本土民营企业集团，并先后引进了英荷壳牌、索尼、松下、东风本田、通用、三星、LG、飞利浦和中海油、中国联想等国内外著名厂商在惠州建立生产和研发基地。惠州经济保持平稳快速发展，GDP增速已高居广东全省第二位。<br />
@@ -15,15 +18,17 @@ export default class About extends Component {
         </Box>
         <br />
         <br />
-        <br />
-        <br />
-        <Box style={{ width: '60%' }}>
-          <Box><span style={{ fontSize: 'x-large' }}>联系人：周先生</span></Box>
-          <Box><span style={{ fontSize: 'x-large' }}>地&nbsp;&nbsp;址：惠州市惠沙堤12号</span></Box>
-          <Box><span style={{ fontSize: 'x-large' }}>邮&nbsp;&nbsp;编：516001</span></Box>
-          <Box><span style={{ fontSize: 'x-large' }}>联系人：周先生</span></Box>
-          <Box><span style={{ fontSize: 'x-large' }}>联系人：周先生</span></Box>
+        <Box style={{ width: '80%' }} direction='row'>
+          <Box>
+            <Box><span style={{ fontSize: 'x-large' }}>联系人：周先生</span></Box>
+            <Box><span style={{ fontSize: 'x-large' }}>地&nbsp;&nbsp;址：惠州市惠沙堤12号</span></Box>
+            <Box><span style={{ fontSize: 'x-large' }}>邮&nbsp;&nbsp;编：516001</span></Box>
+            <Box><span style={{ fontSize: 'x-large' }}>座&nbsp;&nbsp;机：0752-2112610</span></Box>
+            <Box><span style={{ fontSize: 'x-large' }}>邮&nbsp;&nbsp;箱：281949851@qq.com</span></Box>
+          </Box>
         </Box>
+        <br />
+        <br />
       </Box>
     );
   }
