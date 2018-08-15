@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { Box, Table, TableRow, Image, Heading, Label, Paragraph } from 'grommet';
-import { Map } from 'react-amap';
+import { Map, Marker } from 'react-amap';
 
 export default class About extends Component {
   render() {
@@ -18,17 +18,27 @@ export default class About extends Component {
         </Box>
         <br />
         <br />
-        <Box style={{ width: '80%' }} direction='row'>
-          <Box>
+        <Box align={'center'} style={{ width: '60%' }} direction='row'>
+          <Box style={{ padding: '30px' }}>
             <Box><span style={{ fontSize: 'x-large' }}>联系人：周先生</span></Box>
             <Box><span style={{ fontSize: 'x-large' }}>地&nbsp;&nbsp;址：惠州市惠沙堤12号</span></Box>
             <Box><span style={{ fontSize: 'x-large' }}>邮&nbsp;&nbsp;编：516001</span></Box>
             <Box><span style={{ fontSize: 'x-large' }}>座&nbsp;&nbsp;机：0752-2112610</span></Box>
             <Box><span style={{ fontSize: 'x-large' }}>邮&nbsp;&nbsp;箱：281949851@qq.com</span></Box>
           </Box>
+          <Box style={{ padding: '30px' }}>
+            <Box><span style={{ fontSize: 'x-large' }}>统一社会信用代码： 91441300779216592L</span></Box>
+            <Box><span style={{ fontSize: 'x-large' }}>企业类型：有限责任公司(自然人投资或控股)</span></Box>
+            <Box><span style={{ fontSize: 'x-large' }}>成立日期：2001年12月07日</span></Box>
+          </Box>
         </Box>
         <br />
         <br />
+        <Box align={'center'} style={{ width: '60%', height: '300px' }}>
+          <Map amapkey={'1a32e9e3c0dc855de08e7984bd74085e'} >
+            <Marker position={'39.9087', '116.3975'} />
+          </Map>
+        </Box>
       </Box>
     );
   }

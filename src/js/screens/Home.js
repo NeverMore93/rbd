@@ -22,7 +22,7 @@ export default class Home extends Component {
           </Carousel>
         </Box>
         <Box align={'center'} style={{ padding: '30px' }}>
-          <Tiles>
+          <Tiles fill={true}>
             <Tile style={{ padding: '30px' }}>
               <Card thumbnail={thumb1} heading='Sample Heading' label='Sample Label' description='Sample description providing more details.' />
             </Tile>
