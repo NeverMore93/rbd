@@ -36,7 +36,7 @@ export default class About extends Component {
         <br />
         <Box align={'center'} style={{ width: '60%', height: '300px' }}>
           <Map amapkey={'1a32e9e3c0dc855de08e7984bd74085e'} >
-            <Marker position={'39.9087', '116.3975'} />
+            <Marker position={'39.9087, 116.3975'} />
           </Map>
         </Box>
       </Box>

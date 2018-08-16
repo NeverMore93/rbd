@@ -11,6 +11,9 @@ import Home from '../screens/Home';
 import NotFound from '../screens/NotFound';
 import Introduce from '../screens/Introduce';
 import About from '../screens/About';
+import Overview from '../screens/Overview';
+import Announcement from '../screens/Announcement';
+
 
 class Main extends Component {
   render() {
@@ -24,6 +27,8 @@ class Main extends Component {
               <Route path='/home' component={Home} />
               <Route path='/about' component={About} />
               <Route path='/introduce' component={Introduce} />
+              <Route path='/overview' component={Overview} />
+              <Route path='/announcement' component={Announcement} />
               <Route path='/*' component={NotFound} />
             </Switch>
           </Box>
