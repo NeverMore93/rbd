@@ -6,23 +6,15 @@ import 'react-web-tabs/dist/react-web-tabs.css';
 export default class Introduce extends Component {
   render() {
     return (
-      <Box direction='row' align={'center'} style={{ width: '80%' }}>
-        <Tabs defaultTab='vertical-tab-one' vertical={true}>
-          <TabList>
-            <Tab tabFor='vertical-tab-one'>Tab 1</Tab>
-            <Tab tabFor='vertical-tab-two'>Tab 2</Tab>
-            <Tab tabFor='vertical-tab-three'>Tab 3</Tab>
-          </TabList>
-          <TabPanel tabId='vertical-tab-one'>
-            <p>Tab 1 content</p>
-          </TabPanel>
-          <TabPanel tabId='vertical-tab-two'>
-            <p>Tab 2 content</p>
-          </TabPanel>
-          <TabPanel tabId='vertical-tab-three'>
-            <p>Tab 3 content</p>
-          </TabPanel>
-        </Tabs>
+      <Box direction='row' align={'center'} style={{ width: '60%' }}>
+        <Box style={{ width: '20%' }}>
+          <Label>关于我们</Label>
+          <Label>关于我们</Label>
+          <Label>关于我们</Label>
+        </Box>
+        <Box style={{ width: '80%' }}>
+          right
+        </Box>
       </Box>
     );
   }
