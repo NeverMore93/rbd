@@ -97,7 +97,15 @@ export default Object.assign({
     rules: [
       {
         test: /\.css$/,
-        loader: 'css-loader'
+        use: [{
+          loader: 'css-loader',
+          options: {
+            name: '[name].css',
+            outputStyle: 'compressed',
+            includePaths: [
+              './node_modules'
+            ] }
+        }]
       },
       {
         test: /\.js/,

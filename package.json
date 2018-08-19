@@ -68,7 +68,8 @@
     "react-clock": "^2.3.0",
     "react-web-tabs": "^1.0.1",
     "material-ui": "^0.20.2",
-    "react-amap": "^1.2.7"
+    "react-amap": "^1.2.7",
+    "antd": "^3.8.2"
   },
   "jest": {
     "collectCoverage": true,
